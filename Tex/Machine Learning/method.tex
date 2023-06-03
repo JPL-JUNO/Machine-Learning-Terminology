@@ -1,0 +1,4 @@
+\chapter{Methods\label{method}}
+\section{MultiClass}
+\subsection{The OvA method for multi-class classification}
+OvA, which is sometimes also called \textbf{one-versus-rest (OvR)}, is a technique that allows us to extend any binary classifier to multi-class problems. Using OvA, we can train one classifier per class, where the particular class is treated as the positive class and the examples from all other classes are considered negative classes. If we were to classify a new, unlabeled data instance, we would use our $n$ classifiers, where $n$ is the number of class labels, and assign the class label with the highest confidence to the particular instance we want to classify.
